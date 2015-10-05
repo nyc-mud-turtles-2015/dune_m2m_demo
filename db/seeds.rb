@@ -28,3 +28,6 @@ end
 
 dm = Book.find_by(title: "Children of Dune")
 dm.characters << Character.where(name: CHILDREN_OF_DUNE)
+
+Appearance.of("Chani", in: "Dune").create_arc(summary: "Meets Offworld boy; falls in love; becomes concubine.")
+Appearance.of("Baron Vladimir Harkonnen", in: "Dune").create_arc(summary: "Plays pop-pop paw-paw with granddaughter")
